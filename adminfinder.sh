@@ -42,7 +42,7 @@ nyeken(){
 
 #Finding dirlist
 getdir(){
-	getgit=$(curl -s -o dirlist.txt -w '%{http_code}' https://raw.githubusercontent.com/lapakdigital/adminfinder/master/dirlist
+	getgit=$(curl -s -o dirlist.txt -w '%{http_code}' https://raw.githubusercontent.com/wirantoindra/adminfinder/master/dirlist
 )
 	if [[ $getgit == 200 ]]
 		then
