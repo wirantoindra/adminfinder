@@ -42,8 +42,7 @@ nyeken(){
 
 #Finding dirlist
 getdir(){
-	getgit=$(curl -s -o dirlist.txt -w '%{http_code}' https://raw.githubusercontent.com/wirantoindra/adminfinder/master/dirlist
-)
+	getgit=$(curl -s -o dirlist.txt -w '%{http_code}' https://github.com/wirantoindra/adminfinder/blob/master/dirlist
 	if [[ $getgit == 200 ]]
 		then
 			printf "${kuning}=> Dirlist downloaded${NC}\n"
